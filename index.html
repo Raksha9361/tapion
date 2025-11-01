@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tapion's Interactive Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /* For 3D transform */
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      body {
+        background-color: #0d0d0d;
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 2rem 2rem;
+      }
+      @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        animation: marquee 60s linear infinite;
+      }
+      .animate-marquee-logos {
+        animation: marquee 40s linear infinite;
+      }
+      /* Swiper Styles */
+      .swiper-container {
+        overflow: hidden;
+        mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+      }
+      .swiper-slide {
+        width: 280px;
+        height: 570px;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        overflow: hidden;
+        object-fit: contain;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

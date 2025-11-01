@@ -1,0 +1,5 @@
+{
+  "name": "Tapion's Interactive Profile Card",
+  "description": "An interactive, animated 3D profile card for Tapion, inspired by groarz.com, built with React and Tailwind CSS. The card features a smooth 3D tilt effect that responds to mouse movement, entry animations, and a sleek, modern design.",
+  "requestFramePermissions": []
+}
